@@ -6,44 +6,16 @@
   <title>Module 1: Introduction to Forex - ApexFX Academy</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    main.container.lesson-content {
-      padding-top: 40px;
-    }
-    section {
-      background-color: #10253e;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    section h3 {
-      color: #00B59F;
-      margin-top: 0;
-    }
-    p {
-      margin-bottom: 16px;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 20px;
-      margin-bottom: 16px;
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
-    .downloads a {
-      display: inline-block;
-      margin: 8px 0;
-      padding: 10px 16px;
-      background-color: #00B59F;
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .downloads a:hover {
-      background-color: #009c88;
-    }
+    body { background: #0A1F3D; color: white; font-family: 'Poppins', sans-serif; margin: 0; }
+    .container { width: 90%; max-width: 1100px; margin: auto; padding: 20px; }
+    section { background: #10253e; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+    h2 { font-size: 2em; color: #00B59F; margin-bottom: 20px; }
+    h3 { font-size: 1.4em; color: #00B59F; margin-bottom: 10px; }
+    p { line-height: 1.7; margin-bottom: 15px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    img { max-width: 100%; margin: 20px 0; border-radius: 5px; }
+    a.download-link { background: #00B59F; padding: 10px 16px; border-radius: 4px; color: white; text-decoration: none; display: inline-block; margin: 10px 0; }
   </style>
 </head>
 <body>
@@ -60,80 +32,81 @@
   </div>
 </header>
 
-<main class="container lesson-content">
+<main class="container">
   <h2>Module 1: Introduction to Forex</h2>
 
   <section>
     <h3>What is the Forex Market?</h3>
-    <img src="images/market_size.svg" alt="Forex Market Size">
-    <p>The foreign exchange market — commonly called Forex or FX — is a global, decentralized financial market where currencies are exchanged. It is the largest financial market in the world, with a daily volume exceeding $6.6 trillion. This market is highly liquid, meaning trades can be executed quickly with minimal price differences.</p>
-    <p><strong>Decentralized</strong> means that there's no single exchange. Instead, forex trading is conducted electronically between institutions, banks, brokers, and individuals.</p>
+    <img src="images/market_size.svg" alt="Market Size">
+    <p>The <strong>foreign exchange market (Forex or FX)</strong> is the global marketplace for exchanging national currencies. Unlike a centralized stock exchange, the forex market is <strong>decentralized</strong> and operates entirely electronically over-the-counter (OTC), meaning transactions are conducted directly between participants via computer networks instead of on a centralized exchange.</p>
+    <p>With over <strong>$6.6 trillion in daily trading volume</strong>, Forex is the largest and most liquid market in the world. This liquidity ensures trades can be entered and exited quickly, often without significant price slippage, even when trading large volumes.</p>
   </section>
 
   <section>
     <h3>How the Forex Market Operates</h3>
     <img src="images/session_timeline.svg" alt="Trading Sessions">
-    <p>The market runs 24 hours a day, 5 days a week, due to overlapping global trading sessions in Sydney, Tokyo, London, and New York. The most active period is when London and New York sessions overlap.</p>
+    <p>The forex market is open <strong>24 hours a day, five days a week</strong>. This is possible because it follows the sun — beginning in Asia (Tokyo), moving to Europe (London), and finally to North America (New York). These are called <strong>trading sessions</strong>.</p>
     <ul>
-      <li><strong>Liquidity:</strong> Availability of buyers/sellers at every price level.</li>
-      <li><strong>Volatility:</strong> Speed and size of price changes over time.</li>
+      <li><strong>Liquidity:</strong> During overlapping sessions like London–New York, the market has the most participants and the tightest spreads.</li>
+      <li><strong>Volatility:</strong> Events such as economic news releases often happen during major session overlaps, creating price fluctuations and trade opportunities.</li>
     </ul>
   </section>
 
   <section>
     <h3>Who Trades Forex?</h3>
-    <p>Participants include central banks, commercial banks, hedge funds, corporations, and individual traders. Each has unique reasons, from speculation to business operations and risk management.</p>
+    <p>The forex market is traded by a wide range of participants:</p>
     <ul>
-      <li><strong>Speculation:</strong> Predicting price movement to profit.</li>
-      <li><strong>Hedging:</strong> Protecting existing investments from currency risk.</li>
+      <li><strong>Central Banks:</strong> Intervene to control inflation or stabilize their national currency.</li>
+      <li><strong>Commercial Banks:</strong> Conduct forex transactions for clients or speculative purposes.</li>
+      <li><strong>Hedge Funds:</strong> Use forex for high-leverage speculative strategies.</li>
+      <li><strong>Corporations:</strong> Hedge currency exposure on international sales/purchases.</li>
+      <li><strong>Retail Traders:</strong> Individuals like you trading via brokers to profit from market fluctuations.</li>
     </ul>
   </section>
 
   <section>
     <h3>Understanding Currency Pairs</h3>
     <img src="images/pair_structure.svg" alt="Currency Pair Structure">
-    <p>Forex pairs are shown like EUR/USD = 1.1050. This means one Euro equals 1.1050 US Dollars.</p>
+    <p>In Forex, you always trade one currency for another. This is represented in <strong>currency pairs</strong>, like <code>EUR/USD</code>. The first currency is the <strong>base currency</strong> (EUR), and the second is the <strong>quote currency</strong> (USD).</p>
+    <p>The exchange rate tells you how much of the quote currency is needed to purchase one unit of the base currency. For example:</p>
     <ul>
-      <li><strong>Base Currency:</strong> The first currency in the pair (EUR).</li>
-      <li><strong>Quote Currency:</strong> The second currency (USD).</li>
-      <li><strong>Exchange Rate:</strong> How much of the quote currency is needed to buy one unit of the base currency.</li>
+      <li><strong>EUR/USD = 1.1050</strong> means 1 Euro = 1.1050 US Dollars.</li>
     </ul>
-    <p><em>Example:</em> Buying EUR/USD at 1.1000 and closing at 1.1100 yields a 100 pip profit.</p>
+    <p><em>Example:</em> If you buy EUR/USD at 1.1000 and sell at 1.1100, you've made a 100 pip gain.</p>
   </section>
 
   <section>
     <h3>Types of Currency Pairs</h3>
     <img src="images/pair_types.svg" alt="Types of Currency Pairs">
-    <p>There are three main categories:</p>
     <ul>
-      <li><strong>Major Pairs:</strong> Include USD and are highly liquid (e.g., EUR/USD).</li>
-      <li><strong>Minor Pairs:</strong> Exclude USD but are still relatively liquid (e.g., EUR/GBP).</li>
-      <li><strong>Exotic Pairs:</strong> Combine a major currency with a less traded one (e.g., USD/TRY).</li>
+      <li><strong>Major Pairs:</strong> Include the USD and are highly traded (e.g., EUR/USD, GBP/USD).</li>
+      <li><strong>Minor Pairs:</strong> Exclude USD but include other majors (e.g., EUR/GBP).</li>
+      <li><strong>Exotic Pairs:</strong> Pair a major with a developing currency (e.g., USD/TRY).</li>
     </ul>
-    <p><strong>Spread:</strong> The difference between bid and ask prices. <strong>Liquidity:</strong> More liquidity = smaller spreads.</p>
+    <p><strong>Spread:</strong> The difference between the buying (ask) and selling (bid) price. A smaller spread often indicates a more liquid pair.</p>
   </section>
 
   <section>
     <h3>What Moves Currency Prices?</h3>
-    <p>Currency prices react to economic indicators, political events, and overall market sentiment. For example, a higher interest rate in a country may attract investors, strengthening its currency.</p>
+    <p>Currency values change constantly due to multiple factors:</p>
     <ul>
-      <li><strong>Risk Appetite:</strong> Willingness of traders to pursue risky assets.</li>
-      <li><strong>Safe-Haven Currency:</strong> Currencies like USD or JPY sought during uncertainty.</li>
+      <li><strong>Economic Indicators:</strong> Interest rates, employment data, GDP growth.</li>
+      <li><strong>Geopolitical Events:</strong> Elections, wars, and international disputes.</li>
+      <li><strong>Market Sentiment:</strong> News and trader psychology can influence demand for certain currencies.</li>
+      <li><strong>Risk Appetite:</strong> Traders may favor “risk-on” currencies in good times and “safe-havens” like USD or JPY during crises.</li>
     </ul>
   </section>
 
   <section>
     <h3>Summary</h3>
-    <p>You've learned what forex is, who participates, how pairs work, and what drives price movements. These concepts are essential for deeper understanding and real-world trading preparation.</p>
+    <p>You’ve now grasped the foundational knowledge of how Forex works. You understand who trades, why they trade, how currencies are paired, and what influences prices. These concepts are essential before moving into technical analysis and trade execution strategies.</p>
   </section>
 
   <section class="downloads">
     <h3>Downloads</h3>
-    <ul>
-      <li><a href="downloads/Module1_Summary.pdf" download>📘 Download Module 1 Summary</a></li>
-      <li><a href="downloads/Module1_Glossary.pdf" download>📘 Download Glossary of Terms</a></li>
-      <li><a href="downloads/Module1_CheatSheet.pdf" download>📘 Download Cheat Sheet</a></li>
-    </ul>
+    <a class="download-link" href="downloads/Module1_Summary.pdf" download>📘 Module 1 Summary</a><br>
+    <a class="download-link" href="downloads/Module1_Glossary.pdf" download>📘 Glossary of Terms</a><br>
+    <a class="download-link" href="downloads/Module1_CheatSheet.pdf" download>📘 Cheat Sheet</a>
   </section>
 </main>
 
