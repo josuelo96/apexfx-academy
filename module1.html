@@ -33,87 +33,148 @@
 </header>
 
 <main class="container">
+  <!-- Module Header -->
   <h2>Module 1: Introduction to Forex</h2>
+  <p class="module-subtitle">
+    A deep dive into what Forex is, market structure, participants, costs, and a real-world case study.
+  </p>
 
+  <!-- 1. Learning Objectives -->
   <section>
-    <h3>What is the Forex Market?</h3>
-    <img src="images/market_size.svg" alt="Market Size">
-    <p>The <strong>foreign exchange market (Forex or FX)</strong> is the global marketplace for exchanging national currencies. Unlike a centralized stock exchange, the forex market is <strong>decentralized</strong> and operates entirely electronically over-the-counter (OTC), meaning transactions are conducted directly between participants via computer networks instead of on a centralized exchange.</p>
-    <p>With over <strong>$6.6 trillion in daily trading volume</strong>, Forex is the largest and most liquid market in the world. This liquidity ensures trades can be entered and exited quickly, often without significant price slippage, even when trading large volumes.</p>
-  </section>
-
-  <section>
-    <h3>How the Forex Market Operates</h3>
-    <img src="images/session_timeline.svg" alt="Trading Sessions">
-    <p>The forex market is open <strong>24 hours a day, five days a week</strong>. This is possible because it follows the sun — beginning in Asia (Tokyo), moving to Europe (London), and finally to North America (New York). These are called <strong>trading sessions</strong>.</p>
+    <h3>Learning Objectives</h3>
     <ul>
-      <li><strong>Liquidity:</strong> During overlapping sessions like London–New York, the market has the most participants and the tightest spreads.</li>
-      <li><strong>Volatility:</strong> Events such as economic news releases often happen during major session overlaps, creating price fluctuations and trade opportunities.</li>
+      <li>Define the Forex market and its key characteristics.</li>
+      <li>Identify major participants and liquidity layers in the OTC market.</li>
+      <li>Distinguish between major, minor, and exotic currency pairs.</li>
+      <li>Describe the 24-hour trading cycle and session overlaps.</li>
+      <li>Calculate bid/ask spreads and basic trading costs.</li>
     </ul>
   </section>
 
+  <!-- 2. Core Lecture -->
   <section>
-    <h3>Who Trades Forex?</h3>
-    <p>The forex market is traded by a wide range of participants:</p>
+    <h3>Core Lecture</h3>
+    <div class="video-container">
+      <!-- Replace with your actual video embed or URL -->
+      <video controls width="100%">
+        <source src="videos/module1_intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p>
+      Forex (foreign exchange) is the global, decentralized (OTC) marketplace where all currencies trade.  
+      With over <strong>$6 trillion</strong> in daily turnover, it’s the world’s largest financial market.
+    </p>
+    <figure>
+      <img src="images/global_market.png" alt="Globe with currency symbols illustrating Forex market">
+      <figcaption>Global scale of Forex trading</figcaption>
+    </figure>
+    <figure>
+      <img src="images/liquidity_pyramid.png" alt="Pyramid illustrating Forex liquidity layers">
+      <figcaption>Liquidity layers: Retail → Brokers → Hedge Funds → Interbank → Central Banks</figcaption>
+    </figure>
+  </section>
+
+  <!-- 3. Detailed Concepts -->
+  <section>
+    <h3>What Is Forex?</h3>
+    <p>
+      Forex is an over-the-counter market—no central exchange—where participants trade currencies via electronic networks.
+      It exists to facilitate international trade, hedge currency risk, and allow speculation on price movements.
+    </p>
+
+    <h3>Market Structure &amp; Participants</h3>
     <ul>
-      <li><strong>Central Banks:</strong> Intervene to control inflation or stabilize their national currency.</li>
-      <li><strong>Commercial Banks:</strong> Conduct forex transactions for clients or speculative purposes.</li>
-      <li><strong>Hedge Funds:</strong> Use forex for high-leverage speculative strategies.</li>
-      <li><strong>Corporations:</strong> Hedge currency exposure on international sales/purchases.</li>
-      <li><strong>Retail Traders:</strong> Individuals like you trading via brokers to profit from market fluctuations.</li>
+      <li><strong>Central Banks</strong> (5–10% volume): Set policy & intervene</li>
+      <li><strong>Interbank Banks</strong> (~50%): Provide deep liquidity & quotes</li>
+      <li><strong>Hedge Funds &amp; Institutions</strong> (~20%): Speculative flows & hedging</li>
+      <li><strong>Brokers &amp; IBs</strong> (~15%): Bridge retail orders</li>
+      <li><strong>Retail Traders</strong> (~5%): Smaller orders, visible but not price-setting</li>
+    </ul>
+    <div class="note">
+      <strong>Note:</strong> Retail traders see quotes but don’t set them; true price discovery occurs at the interbank layer.
+    </div>
+
+    <h3>Currency Pairs &amp; Spreads</h3>
+    <p>
+      You always trade one currency for another (e.g., <code>EUR/USD</code>).
+      The <em>spread</em> (ask–bid) is your immediate cost:  
+      if EUR/USD is 1.10000/1.10002, that’s a 2-pip spread, or $20 on one standard lot.
+    </p>
+
+    <h3>Trading Sessions &amp; Volatility</h3>
+    <p>
+      Forex runs 24 hr/day, five days/week, across four sessions:
+      Sydney, Tokyo, London, New York. Overlaps (especially London/New York) see the tightest spreads and biggest moves.
+    </p>
+    <figure>
+      <img src="images/session_timeline.png" alt="Timeline of Forex trading sessions and overlaps">
+      <figcaption>Session times &amp; volatility peaks</figcaption>
+    </figure>
+  </section>
+
+  <!-- 4. Real-World Case Study -->
+  <section>
+    <h3>Case Study: SNB’s 2015 EUR/CHF Intervention</h3>
+    <p>
+      On Jan 15, 2015, the Swiss National Bank removed its EUR/CHF cap, triggering a 1,000-pip gap.
+      Liquidity evaporated layer by layer—retail slippage, broker margin calls, bank hedging—showing pure OTC risk.
+    </p>
+    <figure>
+      <img src="images/eur-chf-spike.png" alt="Annotated chart of the EUR/CHF spike">
+      <figcaption>Minute-by-minute spike with layer-specific call-outs</figcaption>
+    </figure>
+    <a class="download-link" href="downloads/EURCHF_CaseData.csv" download>
+      📥 Download case-study data (CSV)
+    </a>
+  </section>
+
+  <!-- 5. Hands-On Exercise -->
+  <section class="activity">
+    <h3>Hands-On Exercise</h3>
+    <ol>
+      <li>Open a demo account with any regulated broker and capture bid/ask for EUR/USD, USD/JPY, and an exotic pair.</li>
+      <li>Over 24 hours, log the highest pip movement per hour during Tokyo vs. London sessions.</li>
+      <li>Compare spreads across two brokers and summarize in a one-page report.</li>
+    </ol>
+  </section>
+
+  <!-- 6. Quiz & Scenario -->
+  <section>
+    <h3>Quick Quiz</h3>
+    <ul>
+      <li>What is the average daily turnover in Forex?</li>
+      <li>Which participant provides the deepest liquidity?</li>
+      <li>Explain what a “2-pip spread” means on a 1-lot trade.</li>
+    </ul>
+    <p><em>Scenario:</em> If the Fed unexpectedly hikes rates at 13:00 GMT, how might EUR/USD behave during the London/New York overlap?</p>
+  </section>
+
+  <!-- 7. Discussion & Peer Review -->
+  <section>
+    <h3>Peer Discussion</h3>
+    <p>
+      Share your spread-comparison report in the forum.
+      Comment on at least two peers’ posts using the template:
+      <em>“I liked how you… One suggestion would be…”</em>
+    </p>
+  </section>
+
+  <!-- 8. Supplemental Resources -->
+  <section>
+    <h3>Additional Resources</h3>
+    <ul>
+      <li><a href="downloads/Module1_Summary.pdf" class="download-link" download>Module 1 Summary PDF</a></li>
+      <li><a href="downloads/Module1_Glossary.pdf" class="download-link" download>Glossary of Terms</a></li>
+      <li><a href="downloads/Module1_CheatSheet.pdf" class="download-link" download>Cheat Sheet</a></li>
+      <li><a href="https://www.bis.org/statistics/rpfx19.htm" target="_blank">BIS Triennial Survey</a></li>
+      <li><a href="https://www.investopedia.com/terms/f/forex.asp" target="_blank">Investopedia: What is Forex?</a></li>
     </ul>
   </section>
 
+  <!-- 9. Progress & Badge Trigger -->
   <section>
-    <h3>Understanding Currency Pairs</h3>
-    <img src="images/pair_structure.svg" alt="Currency Pair Structure">
-    <p>In Forex, you always trade one currency for another. This is represented in <strong>currency pairs</strong>, like <code>EUR/USD</code>. The first currency is the <strong>base currency</strong> (EUR), and the second is the <strong>quote currency</strong> (USD).</p>
-    <p>The exchange rate tells you how much of the quote currency is needed to purchase one unit of the base currency. For example:</p>
-    <ul>
-      <li><strong>EUR/USD = 1.1050</strong> means 1 Euro = 1.1050 US Dollars.</li>
-    </ul>
-    <p><em>Example:</em> If you buy EUR/USD at 1.1000 and sell at 1.1100, you've made a 100 pip gain.</p>
-  </section>
-
-  <section>
-    <h3>Types of Currency Pairs</h3>
-    <img src="images/pair_types.svg" alt="Types of Currency Pairs">
-    <ul>
-      <li><strong>Major Pairs:</strong> Include the USD and are highly traded (e.g., EUR/USD, GBP/USD).</li>
-      <li><strong>Minor Pairs:</strong> Exclude USD but include other majors (e.g., EUR/GBP).</li>
-      <li><strong>Exotic Pairs:</strong> Pair a major with a developing currency (e.g., USD/TRY).</li>
-    </ul>
-    <p><strong>Spread:</strong> The difference between the buying (ask) and selling (bid) price. A smaller spread often indicates a more liquid pair.</p>
-  </section>
-
-  <section>
-    <h3>What Moves Currency Prices?</h3>
-    <p>Currency values change constantly due to multiple factors:</p>
-    <ul>
-      <li><strong>Economic Indicators:</strong> Interest rates, employment data, GDP growth.</li>
-      <li><strong>Geopolitical Events:</strong> Elections, wars, and international disputes.</li>
-      <li><strong>Market Sentiment:</strong> News and trader psychology can influence demand for certain currencies.</li>
-      <li><strong>Risk Appetite:</strong> Traders may favor “risk-on” currencies in good times and “safe-havens” like USD or JPY during crises.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Summary</h3>
-    <p>You’ve now grasped the foundational knowledge of how Forex works. You understand who trades, why they trade, how currencies are paired, and what influences prices. These concepts are essential before moving into technical analysis and trade execution strategies.</p>
-  </section>
-
-  <section class="downloads">
-    <h3>Downloads</h3>
-    <a class="download-link" href="downloads/Module1_Summary.pdf" download>📘 Module 1 Summary</a><br>
-    <a class="download-link" href="downloads/Module1_Glossary.pdf" download>📘 Glossary of Terms</a><br>
-    <a class="download-link" href="downloads/Module1_CheatSheet.pdf" download>📘 Cheat Sheet</a>
+    <p class="progress">Stage 1: Module 1 / 9 completed 🎉</p>
+    <a href="module2.html" class="download-link">Proceed to Module 2: Setting Up to Trade</a>
   </section>
 </main>
-
-<footer>
-  <div class="container footer-content">
-    <p>© 2025 ApexFX Academy</p>
-  </div>
-</footer>
-</body>
-</html>
